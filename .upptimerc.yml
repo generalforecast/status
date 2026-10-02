@@ -9,8 +9,8 @@ sites:
 status-website:
   baseUrl: /
   theme: generalforecast
-  logoUrl: /logo.svg
-  favicon: /logo.svg
+  logoUrl: /logo-192.png
+  favicon: /logo-192.png
   logoHref: https://search.generalforecast.com
   name: General Forecast Status
   introTitle: "**General Forecast** system status"
