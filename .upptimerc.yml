@@ -1,0 +1,19 @@
+# General Forecast status page, powered by Upptime (https://upptime.js.org)
+owner: generalforecast
+repo: status
+
+sites:
+  - name: General Forecast Search
+    url: https://search.generalforecast.com
+
+status-website:
+  baseUrl: /
+  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
+  name: General Forecast Status
+  introTitle: "**General Forecast** system status"
+  introMessage: Live status of search.generalforecast.com, checked every 5 minutes.
+  navbar:
+    - title: Status
+      href: /
+    - title: GitHub
+      href: https://github.com/$OWNER/$REPO
