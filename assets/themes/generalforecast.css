@@ -1,0 +1,49 @@
+/* General Forecast status page theme: matches search.generalforecast.com's
+   design (Neue Montreal, ink-on-white, muted secondary text). */
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/fonts/NeueMontreal-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --body-background-color: #ffffff;
+  --body-text-color: #16181b;
+  --card-background-color: #f6f6f7;
+  --nav-background-color: #ffffff;
+  --nav-border-bottom-color: #e9e9ea;
+  --nav-current-border-bottom-color: #16181b;
+  --card-border-color: #e9e9ea;
+  --down-border-left-color: #b23b3b;
+  --down-background-color: #f6e9e9;
+  --degraded-border-left-color: #a8761f;
+  --up-border-left-color: #2f6b4f;
+  --tag-color: #ffffff;
+  --tag-up-background-color: #2f6b4f;
+  --tag-down-background-color: #b23b3b;
+  --tag-degraded-background-color: #a8761f;
+  --change-background-color: #a8761f;
+  --error-button-border-color: #16181b;
+  --error-button-background-color: #16181b;
+  --error-button-color: #ffffff;
+  --submit-button-border-color: #16181b;
+  --submit-button-background-color: #16181b;
+  --submit-button-color: #ffffff;
+  --graph-opacity: 1;
+  --graph-filter: saturate(0.6);
+}
+
+body {
+  font-family: "Neue Montreal", "Helvetica Neue", Arial, sans-serif;
+}
+
+.card {
+  border-radius: 2px !important;
+}
+
+.logo img {
+  border-radius: 0 !important;
+}

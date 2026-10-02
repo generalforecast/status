@@ -8,7 +8,10 @@ sites:
 
 status-website:
   baseUrl: /
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
+  theme: generalforecast
+  logoUrl: /logo.svg
+  favicon: /logo.svg
+  logoHref: https://search.generalforecast.com
   name: General Forecast Status
   introTitle: "**General Forecast** system status"
   introMessage: Live status of search.generalforecast.com, checked every 5 minutes.
