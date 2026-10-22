@@ -1,0 +1,42 @@
+# General Forecast status page, powered by Upptime (https://upptime.js.org)
+owner: generalforecast
+repo: status
+
+sites:
+  - name: General Forecast
+    url: https://app.generalforecast.com/readyz
+    icon: https://status.generalforecast.com/favicon.svg
+    __dangerous__body_down_if_text_missing: '"ready":true'
+
+commitMessages:
+  commitAuthorName: Ayushi Batwara
+  commitAuthorEmail: ayushi@generalforecast.com
+
+graphBackgroundColor: "#e6e6e2"
+graphBorderColor: "#191a1c"
+
+status-website:
+  cname: status.generalforecast.com
+  themeUrl: https://status.generalforecast.com/gf.css
+  logoUrl: https://status.generalforecast.com/logo.svg
+  favicon: https://status.generalforecast.com/favicon-32.png
+  faviconSvg: https://status.generalforecast.com/favicon.svg
+  logoHref: https://app.generalforecast.com
+  name: General Forecast
+  introTitle: General Forecast status
+  introMessage: Live status of [app.generalforecast.com](https://app.generalforecast.com), checked every 5 minutes.
+  navbar:
+    - title: Status
+      href: /
+    - title: Console
+      href: https://app.generalforecast.com
+    - title: GitHub
+      href: https://github.com/$OWNER/$REPO
+
+i18n:
+  allSystemsOperational: All systems operational
+  liveStatus: Live status
+  activeIncidents: Active incidents
+  pastIncidents: Past incidents
+  incidentViewOnGitHub: View and subscribe on GitHub
+  footer: This page is [open source]($REPO), powered by [Upptime](https://upptime.js.org).
