@@ -81,7 +81,7 @@ article .f > div:first-child > div, article > div { color: var(--gf-quiet); }
 article a { text-decoration: none; }
 article.down-active { border-color: #e7b9b3; }
 
-.tag, .live-status article h4::after, section > article.up:only-child::before {
+.tag, .live-status article h4::after {
   display: inline-flex;
   margin: 0 0 0 8px;
   padding: 3px 8px;
@@ -97,7 +97,18 @@ article.down-active { border-color: #e7b9b3; }
 .live-status article.degraded h4::after { content: "Degraded"; background: var(--tag-degraded-background-color); }
 
 /* Response-time sparkline sits behind the row in greyscale. */
-.live-status article.graph { background-color: var(--gf-paper); background-blend-mode: multiply; }
+html body .live-status article.graph { position: relative; background-image: none !important; }
+html body .live-status article.graph::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: var(--gf-radius);
+  background: var(--background) no-repeat center right / contain;
+  filter: grayscale(1) brightness(0.9);
+  mix-blend-mode: multiply;
+  opacity: 0.6;
+  pointer-events: none;
+}
 
 /* Live status range picker, as segmented tabs. */
 .f.r label { margin-left: 4px !important; padding: 4px 10px; border-radius: var(--gf-radius); color: var(--gf-quiet); cursor: pointer; }
@@ -133,3 +144,8 @@ input[type="text"], input[type="password"] {
 dl dt { color: var(--gf-quiet); font-weight: 400; }
 
 html body footer { opacity: 1; margin-top: 48px; padding-top: 16px; font-size: 12px; color: var(--gf-quiet); }
+
+/* "All systems operational": swap Upptime's emoji for a status dot. */
+html body article[class="up"] { display: flex; align-items: center; font-size: 0; }
+html body article[class="up"]::before { content: ""; width: 8px; height: 8px; margin-right: 10px; border-radius: 50%; background: #2f8a5b; }
+html body article[class="up"]::after { content: "All systems operational"; font-size: 14px; line-height: 1.5; }
