@@ -59,14 +59,19 @@ code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-si
 :focus-visible { outline: 1px solid #858780; outline-offset: 2px; }
 
 /* Masthead, as in the console. */
-html body nav { position: sticky; top: 0; z-index: 4; padding: 0; margin-bottom: 40px; font-weight: 400; }
-nav .container.container { max-width: none; height: 64px; padding: 0 24px; }
-nav .container .logo { gap: 16px; padding: 0; margin: 0; font-weight: 400; }
-nav .container .logo img { width: 28px; height: 28px; margin: 0; border-radius: 0; }
-nav .container ul { gap: 4px; }
-nav .container ul a { padding: 8px 12px; border-radius: var(--gf-radius); color: var(--gf-quiet); }
-nav .container ul a:hover { background: var(--gf-surface); color: var(--gf-ink); }
-nav .container ul a[aria-current] { border-bottom: 0; color: var(--gf-ink); background: var(--gf-selected); }
+/* Top bar: same as docs.generalforecast.com (64px, mark + name, underlined current link, bordered Console). */
+html body nav[class][class] { position: sticky; top: 0; z-index: 4; padding: 0; margin-bottom: 40px; font-weight: 400; overflow: visible; background: var(--gf-paper); border-bottom: 1px solid #cfcfcb; }
+nav .container.container { max-width: none; height: 64px; padding: 0 24px; justify-content: flex-start; gap: 32px; }
+nav .container.container .logo { gap: 0.45em; padding: 0; margin: 0; font-size: 18.4px; line-height: 32px; letter-spacing: -0.015em; font-weight: 400; color: var(--gf-ink); }
+nav .container.container .logo img { width: 1.3em; height: 1.3em; margin: 0; border-radius: 0; }
+nav .container.container ul { flex: 1; height: 64px; gap: 24px; justify-content: flex-start; }
+nav .container.container ul li { display: flex; align-items: center; height: 100%; }
+nav .container.container ul a { display: inline-flex; align-items: center; height: 100%; padding: 0; border: 0; border-radius: 0; background: none; color: var(--gf-quiet); font-size: 14px; line-height: 24.5px; }
+nav .container.container ul a:hover { background: none; color: var(--gf-ink); }
+nav .container.container ul a[aria-current] { border-bottom: 0; color: var(--gf-ink); background: none; box-shadow: inset 0 -2px 0 var(--gf-ink); }
+nav .container.container ul li:has(> a[href^="https://app.generalforecast.com"]) { order: 1; margin-left: auto; }
+nav .container.container ul a[href^="https://app.generalforecast.com"] { height: auto; padding: 4px 9.6px; border: 1px solid var(--gf-line); }
+nav .container.container ul a[href^="https://app.generalforecast.com"]:hover { border-color: var(--gf-quiet); }
 
 html body main.container { max-width: 800px; padding: 0 24px; }
 main header { margin-bottom: 32px; }
