@@ -1,7 +1,7 @@
 url: https://app.generalforecast.com/readyz
-status: up
+status: down
 code: 200
-responseTime: 165
-lastUpdated: 2026-10-24T23:11:37.316Z
+responseTime: 118
+lastUpdated: 2026-10-25T03:26:02.000Z
 startTime: 2026-10-22T02:26:12.201Z
 generator: Upptime <https://github.com/upptime/upptime>
