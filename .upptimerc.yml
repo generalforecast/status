@@ -6,7 +6,7 @@ sites:
   - name: General Forecast
     url: https://app.generalforecast.com/readyz
     icon: https://status.generalforecast.com/favicon.svg
-    __dangerous__body_down_if_text_missing: '"ready":true'
+    __dangerous__body_down_if_text_missing: '"status":"ok"'
 
 commitMessages:
   commitAuthorName: Ayushi Batwara
