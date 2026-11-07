@@ -4,17 +4,17 @@
     "url": "https://app.generalforecast.com/readyz",
     "icon": "https://status.generalforecast.com/favicon.svg",
     "slug": "general-forecast",
-    "status": "down",
+    "status": "up",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 136,
-    "timeDay": 75,
-    "timeWeek": 132,
-    "timeMonth": 136,
-    "timeYear": 136,
+    "time": 138,
+    "timeDay": 124,
+    "timeWeek": 137,
+    "timeMonth": 138,
+    "timeYear": 138,
     "dailyMinutesDown": {}
   }
 ]
